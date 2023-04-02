@@ -1,0 +1,129 @@
+* {
+    box-sizing:border-box;
+    
+    font-family: 'Nanum Myeongjo', serif;
+    color:black;
+}
+body{
+    margin:0;
+    padding:0;
+    /* 이걸 해야 전체영역으로 설정됨 */
+}
+a:link, a:visited{
+    text-decoration:none;
+    color:black;
+}
+/* a는 버튼테그 */
+
+.container{
+    width:960px; 
+    /* 배경 말고 내용임 */
+    margin:0 auto;
+    /* 요소들을 가운데로 모을 수 있음 */
+}
+/* 페이지 중앙으로 콘텐츠를 모아줌 */
+/*  네비게이션 바 */
+nav{
+    height:80px;
+    background-color:rgb(100, 117, 101);
+    line-height:80px
+}
+
+nav::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+.nav-logo{
+    font-size: 30px;
+    float: left;
+    margin:0;
+}
+
+.nav-menu{
+    float:right;
+}
+
+.nav-btn{
+    list-style-type:none;
+    margin:0;
+}
+
+ul.nav-btn> li{
+    float:left;
+    margin-left:25px;
+    font-size:20px;
+    
+}
+/* 네브버튼이라는 클래스를 가지는 유엘테그내부의 li테그*/
+/* header */
+.hd{
+    position:relative;
+    height:600px;
+    text-align:center;
+}
+.hd-title{
+    font-size:80px;
+    margin-top:0;
+    margin-bottom:30px;
+    padding-top:200px;
+}
+.hd-content{
+    font-size:25px;
+}
+
+.hd:before{
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    opacity:0.5;
+    background-image: url("./쿼카2.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.hd.container {
+    position:relative;
+    color:black;
+}
+/* section */
+.sec{
+    text-align:center;
+    padding:100px 0;
+    background-color:rgb(100,117,101)
+}
+.sec article {
+    float: left;
+    width:300px;
+    margin-right:30px;
+}
+
+.sec article:last-child{
+    margin-right:0;
+}
+.sec article img{
+    width:100%;
+    height:auto;
+}
+.card-img{
+    overflow:hidden;
+    width:300px;
+    height:300px;
+}
+.sec::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* footer */
+.ft{
+    padding:15px;
+    text-align:center;
+    background-color:plum
+    font-weight:bold;
+}
